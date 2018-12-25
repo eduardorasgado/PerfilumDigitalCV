@@ -8,19 +8,24 @@ $fullName = "$name $lastName";
 
 $jobs = [
     [
-            'title' => "Desarrollador PHP"
+            'title' => "Desarrollador PHP",
+            'description' => "Trabajando con soluciones de backend con php bajo arquitectura MVC y framkework laravel"
     ],
     [
-        'title' => "Desarrollador C++"
+        'title' => "Desarrollador C++",
+        'description' => "Trabajando con GUI, bakend, conecciones a bases de datos, networking, MVC y unit testing"
     ],
     [
-        'title' => "Desarrollador React.js"
+        'title' => "Desarrollador React.js",
+        'description' => "Fronend dinamico para aplicaciones de finanzas, software como servicio, apps en tiempo real. IoT"
     ],
     [
-        'title' => "Desarrollador Node.js"
+        'title' => "Desarrollador Node.js",
+        'description' => "Trabajando con express, MVC, MongoDB, Redis, Postgres, aplicaciones IoT y sockets."
     ],
     [
-        'title' => "Desarrollador Python"
+        'title' => "Desarrollador Python",
+        'description' => "Prototipado de servicios, GUI, machine learning, data science."
     ]
 ];
 ?>
@@ -87,14 +92,11 @@ $jobs = [
             <div class="col-md-8">
                 <h2>Experiencia laboral</h2>
                 <?php
-                    $i = 0;
-                    do{
+                    $i = 0; do{
                         echo "
                             <div>
                                 <h3>".$jobs[$i]['title']."</h3>
-                                <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.
-                                    Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
-                                <p>Años de experiencia: [años]</p>
+                                <p>".$jobs[$i]['description']."</p><p>Años de experiencia: [años]</p>
                             </div>
                         ";
                         $i++;
