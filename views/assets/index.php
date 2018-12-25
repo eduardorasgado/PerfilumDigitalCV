@@ -6,25 +6,23 @@ $lastName = "Rasgado Ruiz";
 // concatenacion con comillas dobles
 $fullName = "$name $lastName";
 
-// arreglos con indice string
-$miArreglo = [
-    "caso1" => "jaguar",
-    "caso2" => "leon",
-    "caso3" => "leopardo"
+$jobs = [
+    [
+            'title' => "Desarrollador PHP"
+    ],
+    [
+        'title' => "Desarrollador C++"
+    ],
+    [
+        'title' => "Desarrollador React.js"
+    ],
+    [
+        'title' => "Desarrollador Node.js"
+    ],
+    [
+        'title' => "Desarrollador Python"
+    ]
 ];
-
-echo $miArreglo["caso2"];
-
-class Animal
-{
-    function move()
-    {
-        echo "El animal se mueve";
-    }
-}
-
-$miAnimal = new Animal();
-$miAnimal->move();
 
 ?>
 
@@ -90,30 +88,30 @@ $miAnimal->move();
             <div class="col-md-8">
                 <h2>Experiencia laboral</h2>
                 <div>
-                    <h3>Desarrollador C++</h3>
+                    <h3><?php echo $jobs[0]['title']; ?></h3>
                     <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.
                         Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
                     <p>Años de experiencia: [años]</p>
                 </div>
                 <div>
-                    <h3>Desarrollador php</h3>
+                    <h3><?php echo $jobs[1]['title']; ?></h3>
                     <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.
                         Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
                     <p>Años de experiencia: [años]</p>
                 </div>
                 <div>
-                    <h3>Desarrollador React</h3>
+                    <h3><?php echo $jobs[2]['title']; ?></h3>
                     <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
                     <p>Años de experiencia: [años]</p>
                 </div>
                 <div>
-                    <h3>Desarrollador Nodejs</h3>
+                    <h3><?php echo $jobs[3]['title']; ?></h3>
                     <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.
                         Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
                     <p>Años de experiencia: [años]</p>
                 </div>
                 <div>
-                    <h3>Desarrollador Python</h3>
+                    <h3><?php echo $jobs[4]['title']; ?></h3>
                     <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.
                         Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
                     <p>Años de experiencia: [años]</p>
