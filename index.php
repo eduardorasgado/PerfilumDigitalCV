@@ -51,3 +51,13 @@ $cocina = [
 
 $elementodeCocina = $miFuncion($cocina);
 echo $elementodeCocina;
+echo "<br>";
+$var1 = 2;
+if($var1 > 2){
+    echo "$var1 es mayor que 2";
+} elseif ($var1 == 2)
+{
+  echo "$var1 es igual a 2";
+} else {
+    echo "$var1 es menor que 2";
+}

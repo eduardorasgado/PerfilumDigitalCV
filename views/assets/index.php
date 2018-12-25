@@ -23,7 +23,6 @@ $jobs = [
         'title' => "Desarrollador Python"
     ]
 ];
-
 ?>
 
 <!DOCTYPE html>
@@ -87,36 +86,20 @@ $jobs = [
         <div class="row">
             <div class="col-md-8">
                 <h2>Experiencia laboral</h2>
-                <div>
-                    <h3><?php echo $jobs[0]['title']; ?></h3>
-                    <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.
-                        Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
-                    <p>Años de experiencia: [años]</p>
-                </div>
-                <div>
-                    <h3><?php echo $jobs[1]['title']; ?></h3>
-                    <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.
-                        Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
-                    <p>Años de experiencia: [años]</p>
-                </div>
-                <div>
-                    <h3><?php echo $jobs[2]['title']; ?></h3>
-                    <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
-                    <p>Años de experiencia: [años]</p>
-                </div>
-                <div>
-                    <h3><?php echo $jobs[3]['title']; ?></h3>
-                    <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.
-                        Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
-                    <p>Años de experiencia: [años]</p>
-                </div>
-                <div>
-                    <h3><?php echo $jobs[4]['title']; ?></h3>
-                    <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.
-                        Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
-                    <p>Años de experiencia: [años]</p>
-                </div>
-
+                <?php
+                    $i = 0;
+                    do{
+                        echo "
+                            <div>
+                                <h3>".$jobs[$i]['title']."</h3>
+                                <p>Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.
+                                    Season each side of the steak with twelve pounds of cabbage.Season each side of the steak with twelve pounds of cabbage.</p>
+                                <p>Años de experiencia: [años]</p>
+                            </div>
+                        ";
+                        $i++;
+                    } while($i < count($jobs));
+                ?>
             </div>
             <div class=" jumbotron col-md-4">
                 <h2>Herramientas de desarrollo</h2>
