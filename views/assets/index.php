@@ -1,3 +1,33 @@
+<?php
+$var1 = 1;
+
+$name = "Eduardo";
+$lastName = "Rasgado Ruiz";
+// concatenacion con comillas dobles
+$fullName = "$name $lastName";
+
+// arreglos con indice string
+$miArreglo = [
+    "caso1" => "jaguar",
+    "caso2" => "leon",
+    "caso3" => "leopardo"
+];
+
+echo $miArreglo["caso2"];
+
+class Animal
+{
+    function move()
+    {
+        echo "El animal se mueve";
+    }
+}
+
+$miAnimal = new Animal();
+$miAnimal->move();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +38,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light" >
-        <a class="navbar-brand" href="#">[Tu nombre]</a>
+        <a class="navbar-brand" href="#"><?php echo $fullName ?></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
